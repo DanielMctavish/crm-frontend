@@ -31,15 +31,16 @@ function App() {
 						<UserVerification />
 					</Route>
 
-					<PrivateRoute exact path="/dashboard">
+					<Route exact path="/dashboard">
 						<Dashboard />
-					</PrivateRoute>
-					<PrivateRoute exact path="/add-ticket">
+					</Route>
+
+					<Route exact path="/add-ticket">
 						<AddTicket />
-					</PrivateRoute>
-					<PrivateRoute exact path="/ticket/:tId">
+					</Route>
+					<Route exact path="/ticket/:tId">
 						<Ticket />
-					</PrivateRoute>
+					</Route>
 					<PrivateRoute exact path="/tickets">
 						<TicketLists />
 					</PrivateRoute>
